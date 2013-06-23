@@ -1,37 +1,34 @@
 {
   "name": "weixin-robot",
-  "version": "0.0.6-2",
-  "homepage": "http://ktmud.github.com/weixin-robot/",
-  "repository": "git://github.com/ktmud/weixin-robot.git",
-  "description": "微信公众平台开放消息接口机器人",
-  "contributors": [
-    "ktmud <jyyjcc@gmail.com> (http://ktmud.com)",
-    "TZ <atian25@qq.com> (http://atian25.iteye.com/)"
-  ],
+  "version": "0.4.2-2",
+  "repository": "git://github.com/node-webot/weixin-robot.git",
+  "description": "微信公众平台开放消息接口机器人 A robot for wechat.",
+  "author": "Jesse Yang <kissmud@gmail.com> (https://github.com/ktmud)",
   "dependencies": {
-    "debug": ">= 0.0.1",
-    "xml2js": ">= 0.2.2",
-    "underscore": ">=1.4",
-    "wind": ">= 0.7"
+    "debug": "~0.7.2",
+    "webot": "~0.1.2",
+    "wechat": "~0.4.2"
   },
   "devDependencies": {
-    "commander": "*",
-    "prettyjson": "*",
-    "express": "*",
     "mocha": "*",
     "should": "*",
-    "color": "*",
-    "chai": "*"
+    "jscover": "*",
+    "supertest": "*",
+    "ejs": "*",
+    "connect": "*"
   },
   "engines": {
     "node" : ">=0.6.0",
     "npm" : ">=1.1.6"
   },
-  "bin": {
-    "webot": "./bin/webot"
-  },
+  "keywords": [
+    "weixin",
+    "robot",
+    "webot",
+    "wechat"
+  ],
   "scripts": {
-    "start": "node examples/app.js",
-    "test": "./node_modules/mocha/bin/mocha"
-  }
+    "test": "./node_modules/mocha/bin/mocha -R spec"
+  },
+  "license": "MIT"
 }
